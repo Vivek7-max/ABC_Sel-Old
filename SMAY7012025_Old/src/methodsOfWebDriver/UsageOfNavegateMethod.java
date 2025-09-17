@@ -12,19 +12,21 @@ public class UsageOfNavegateMethod {
 		driver.get("https://www.dassault-aviation.com/");
 		Thread.sleep(3000);
 		
-		driver.navigate().to("https://www.dassault-aviation.com/group/");
+		Navigation navigation = driver.navigate();
+		
+		navigation.to("https://www.dassault-aviation.com/group/");
 		Thread.sleep(3000);
 		
-		driver.navigate().to("https://www.dassault-aviation.com/passion/");
+		navigation.to("https://www.dassault-aviation.com/passion/");
 		Thread.sleep(3000);
 		
-		driver.navigate().back();
+		navigation.back();
 		Thread.sleep(3000);
 		
-		driver.navigate().forward();
+		navigation.forward();
 		Thread.sleep(3000);
 		
-		driver.navigate().refresh();
+		navigation.refresh();
 		Thread.sleep(3000);
 		
 		driver.quit();
