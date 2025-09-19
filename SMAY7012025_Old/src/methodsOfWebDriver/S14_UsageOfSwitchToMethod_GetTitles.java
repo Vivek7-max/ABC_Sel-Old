@@ -5,8 +5,8 @@ import java.util.Set;
 import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class CloseChildWindows {
-//Close the windows opened other than parent window
+public class S14_UsageOfSwitchToMethod_GetTitles {
+//To get the title for each page opened
 	public static void main(String[] args) throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
 		ChromeDriver driver = new ChromeDriver();
@@ -18,16 +18,20 @@ public class CloseChildWindows {
 		driver.findElement(By.linkText("Elemental Selenium")).click();
 		Thread.sleep(2000);
 		
-		String parentWindowID = driver.getWindowHandle();
-		
 		Set<String> handles = driver.getWindowHandles();
-		handles.remove(parentWindowID);
 		
 		for(String id : handles) {
 			driver.switchTo().window(id);
-			driver.close();
+			
+			//switchTo()
+			//It is used to transfer the driver control to the targeted window
+			
+			String title = driver.getTitle();
+			System.out.println(title);
 		}
 		
+		Thread.sleep(2000);
+		driver.quit();
 
 	}
 

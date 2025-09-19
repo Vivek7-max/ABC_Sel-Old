@@ -3,7 +3,7 @@ package methodsOfWebDriver;
 import org.openqa.selenium.Point;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class UsageOfWindowMethod5 {
+public class S12_UsageOfWindowMethod5 {
 //set the Position (xCo & yCo in pixels) of browser window
 	public static void main(String[] args) throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");

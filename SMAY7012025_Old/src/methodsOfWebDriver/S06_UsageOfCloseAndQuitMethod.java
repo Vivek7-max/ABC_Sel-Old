@@ -2,7 +2,7 @@ package methodsOfWebDriver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class UsageOfCloseAndQuitMethod {
+public class S06_UsageOfCloseAndQuitMethod {
 	public static void main(String[] args) throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
 		ChromeDriver driver = new ChromeDriver();

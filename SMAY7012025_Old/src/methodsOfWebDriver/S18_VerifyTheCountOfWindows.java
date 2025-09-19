@@ -1,12 +1,9 @@
 package methodsOfWebDriver;
 
-import java.util.Set;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class UsageOfGetWindowHandlesMethod {
-//To print the window IDs for each opened window
+public class S18_VerifyTheCountOfWindows {
 	public static void main(String[] args) throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
 		ChromeDriver driver = new ChromeDriver();
@@ -15,19 +12,17 @@ public class UsageOfGetWindowHandlesMethod {
 		
 		driver.findElement(By.linkText("Click Here")).click();
 		Thread.sleep(2000);
-		driver.findElement(By.linkText("Elemental Selenium")).click();
-		Thread.sleep(2000);
 		
-		Set<String> handles = driver.getWindowHandles();
-		//getWindowHandles
-		//1. It is used to get the window Id for all opened windows
-		//2. Return Type is set of String (window ID)
-		//3. The order of insertion is not maintained
-		for(String id : handles) {
-			System.out.println(id);
+		int expctedCount = 2;
+		
+		int actualCount = driver.getWindowHandles().size();
+		
+		if(expctedCount == actualCount) {
+			System.out.println("PASS:: Window Count is matching");
+		}else {
+			System.out.println("FAIL:: Window Count is not matching");
 		}
 		
 		driver.quit();
 	}
-
 }

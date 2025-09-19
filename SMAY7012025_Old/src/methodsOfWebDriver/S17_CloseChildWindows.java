@@ -5,8 +5,8 @@ import java.util.Set;
 import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class GetURLsOfOpendWindows {
-
+public class S17_CloseChildWindows {
+//Close the windows opened other than parent window
 	public static void main(String[] args) throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
 		ChromeDriver driver = new ChromeDriver();
@@ -17,13 +17,18 @@ public class GetURLsOfOpendWindows {
 		Thread.sleep(2000);
 		driver.findElement(By.linkText("Elemental Selenium")).click();
 		Thread.sleep(2000);
-		Set<String> handles = driver.getWindowHandles();
 		
-		for(String id :handles) {
+		String parentWindowID = driver.getWindowHandle();
+		
+		Set<String> handles = driver.getWindowHandles();
+		handles.remove(parentWindowID);
+		
+		for(String id : handles) {
 			driver.switchTo().window(id);
-			System.out.println(driver.getCurrentUrl());
-			
+			driver.close();
 		}
+		
+
 	}
 
 }

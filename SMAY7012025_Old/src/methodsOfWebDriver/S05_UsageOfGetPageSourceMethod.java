@@ -2,7 +2,7 @@ package methodsOfWebDriver;
 
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class UsageOfGetPageSourceMethod {
+public class S05_UsageOfGetPageSourceMethod {
 
 	public static void main(String[] args) {
 		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");

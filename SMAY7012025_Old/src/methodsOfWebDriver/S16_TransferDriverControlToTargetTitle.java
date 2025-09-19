@@ -5,7 +5,7 @@ import java.util.Set;
 import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class TransferDriverControlToTargetTitle {
+public class S16_TransferDriverControlToTargetTitle {
 //Verify the driver control is transfered to the expected title window or not
 	public static void main(String[] args) throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");

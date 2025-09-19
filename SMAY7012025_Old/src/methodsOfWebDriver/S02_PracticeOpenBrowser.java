@@ -2,7 +2,7 @@ package methodsOfWebDriver;
 
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class PracticeOpenBrowser {
+public class S02_PracticeOpenBrowser {
 	static {
 		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
 		ChromeDriver driver = new ChromeDriver();

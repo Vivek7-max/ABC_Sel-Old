@@ -2,7 +2,7 @@ package methodsOfWebDriver;
 
 import org.openqa.selenium.edge.EdgeDriver;
 
-public class UsageOfGetCurrentURLMethod {
+public class S04_UsageOfGetCurrentURLMethod {
 
 	public static void main(String[] args) {
 		System.setProperty("webdriver.edge.driver", "./drivers/msedgedriver.exe");

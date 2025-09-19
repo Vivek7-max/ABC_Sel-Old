@@ -1,15 +1,12 @@
 package basics;
 
 import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class OpenFireFoxBrowserAndNAvigateToURL {
+public class S02_OpenEdgeBrowserAndNavigateToURL {
 
 	public static void main(String[] args) throws InterruptedException {
-		System.setProperty("webdriver.gecko.driver", "./drivers/geckodriver.exe");
-		
-		FirefoxDriver driver = new FirefoxDriver();
-		
+		System.setProperty("webdriver.edge.driver", "./drivers/msedgedriver.exe");
+		EdgeDriver driver = new EdgeDriver();
 		//if there is mismatch for browser version then
 		//we get SessionNotCreatedException
 		//How to handle it? => simply update the browser version
@@ -19,7 +16,6 @@ public class OpenFireFoxBrowserAndNAvigateToURL {
 		Thread.sleep(2000);
 		
 		driver.close();
-
 	}
 
 }

@@ -3,7 +3,7 @@ package methodsOfWebDriver;
 import org.openqa.selenium.Point;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class UsageOfWindowMethod4 {
+public class S11_UsageOfWindowMethod4 {
 //Get the Position (xCo & yCo in pixels) of browser window
 	public static void main(String[] args) {
 		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");

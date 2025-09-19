@@ -10,7 +10,7 @@ class Cookies{
 	}
 }
 
-public class P2 {
+public class P02_PracticeSet2 {
 	public static void main(String[] args) {
 		Set<Cookies> set = new HashSet<Cookies>();		
 		set.add(new Cookies());
