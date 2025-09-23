@@ -22,7 +22,7 @@ public class S15_UsageOfSwitchToMthod_GetUrls {
 		for(String id :handles) {
 			driver.switchTo().window(id);
 			System.out.println(driver.getCurrentUrl());
-			
+		 
 		}
 	}
 

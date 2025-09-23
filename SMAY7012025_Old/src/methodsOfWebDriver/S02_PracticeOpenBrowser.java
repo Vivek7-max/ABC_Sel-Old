@@ -9,7 +9,6 @@ public class S02_PracticeOpenBrowser {
 	}
 	public static void main(String[] args) {
 		
-
 	}
 
 }

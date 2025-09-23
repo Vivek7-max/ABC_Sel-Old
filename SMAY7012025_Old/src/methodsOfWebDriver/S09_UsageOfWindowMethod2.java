@@ -9,7 +9,7 @@ public class S09_UsageOfWindowMethod2 {
 	public static void main(String[] args) {
 		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
 		ChromeDriver driver = new ChromeDriver();
-		
+	 
 		driver.get("https://www.google.com");
 		
 		Dimension dimension = driver.manage().window().getSize();

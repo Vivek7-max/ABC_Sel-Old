@@ -3,12 +3,11 @@ package methodsOfWebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class S01_OpenBrowserAndNavigateToURL {
-
 	public static void main(String[] args) throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
 		
 		ChromeDriver driver = new ChromeDriver();
-		Thread.sleep(2000);
+		Thread.sleep(2000);  
 		//get() => Parameterized method accepting the application URL as String data type
 		//1. To navigate the main URL of the application -
 		driver.get("https://www.google.com/");

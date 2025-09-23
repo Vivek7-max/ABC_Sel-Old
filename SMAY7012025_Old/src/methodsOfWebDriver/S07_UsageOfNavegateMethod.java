@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver.Navigation;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class S07_UsageOfNavegateMethod {
-
+	
 	public static void main(String[] args) throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
 		ChromeDriver driver = new ChromeDriver();
@@ -26,7 +26,7 @@ public class S07_UsageOfNavegateMethod {
 		navigation.forward();
 		Thread.sleep(3000);
 		
-		navigation.refresh();
+		navigation.refresh(); 
 		Thread.sleep(3000);
 		
 		driver.quit();

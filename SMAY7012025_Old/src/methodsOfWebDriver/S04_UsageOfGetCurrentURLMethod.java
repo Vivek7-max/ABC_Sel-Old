@@ -19,7 +19,7 @@ public class S04_UsageOfGetCurrentURLMethod {
 		System.out.println("expectedUrl = "+expectedUrl);
 		
 		//Verification
-		if(actualUrl.equals(expectedUrl)) {
+		if(actualUrl.equals(expectedUrl)) { 
 			System.out.println("PASS:: Successfully navigated to the expected URL");
 		}else {
 			System.out.println("FAIL:: not navigated to the expected URL");
