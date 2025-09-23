@@ -4,7 +4,7 @@ import org.openqa.selenium.Cookie;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class S26_UsageOfGetCookieNamed {
-	//Verify the given cookie is HttpOnly and secure or not
+//Verify the given cookie is HttpOnly and secure or not
 	public static void main(String[] args) {
 		//Launch Browser, Maximize Browser Window and Navigate to URL
 		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
