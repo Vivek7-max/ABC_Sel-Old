@@ -21,5 +21,4 @@ public class S6_ExamplForPartialLinkText {
 		driver.quit();
 		
 	}
-
 }
