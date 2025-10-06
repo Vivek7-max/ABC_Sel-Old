@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<title>Xpath By Attribute</title>
+	</head>
+	<body>	
+		<input type ="text" value="A">
+		<input type ="text" value="B">
+		<input type ="button" value="A">
+	</body>
+</html>
+
+
+//input[@type='text' and @value='A']      ==> A textfield
+//input[@type='text' or @value='A']       ==> A textfield, B textfield, A Button
+//input[@type='text']                     ==> A texfiled, B textfield
+//input[not(@type='button')]              ==> A texfiled, B textfield
+//input[not(@type='text' and @value='A')] ==> B textfield, A Button
+
+
