@@ -1,20 +1,19 @@
-package methodsOfWebElement;
+package locatorExamples;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class S5_ExamplForLinkText {
+public class S4_ExampleForTagNameLocator {
 
 	public static void main(String[] args) {
 		//Open Browser and Navigate to URL
 		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get("https://www.facebook.com/r.php?entry_point=login");
+		driver.get("https://www.google.com");
 		
-		driver.findElement(By.linkText("Already have an account?")).click();
-		//for the linkText() it is mandatory to pass full link text else we get NoSuchElement
+		driver.findElement(By.tagName("a")).click();
 		
 		driver.quit();
 	}
