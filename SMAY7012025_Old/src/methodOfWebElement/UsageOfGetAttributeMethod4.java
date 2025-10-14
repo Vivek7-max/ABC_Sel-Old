@@ -29,7 +29,6 @@ public class UsageOfGetAttributeMethod4 {
 			System.out.println("FAIL:: Attribute is wrong or not present");
 		}
 		
-		
 		driver.quit();
 	}
 
