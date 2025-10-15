@@ -18,7 +18,10 @@ public class S6_ExamplForPartialLinkText {
 		// It is used to locate the web element using the full or partial link text
 		// It accepts the full or partial link text of the element in the form of String as parameter
 		// Return type of this method is By class type of object
+
+
+		//Close the browser and stop the server
 		driver.quit();
-		
+
 	}
 }

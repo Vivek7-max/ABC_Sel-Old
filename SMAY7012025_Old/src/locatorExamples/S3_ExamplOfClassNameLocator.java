@@ -20,7 +20,8 @@ public class S3_ExamplOfClassNameLocator {
 		// It is used to locate the web element using the className attribute
 		// It accepts the classValue of the element in the form of String as parameter
 		// Return type of this method is By class type of object
-		
+
+		//Close the browser and stop the server
 		driver.quit();
 	}
 }
