@@ -24,6 +24,7 @@ public class S33_UsageOfGetRectMethod {
 		System.out.println("Width of Button: "+rect.getWidth());
 		System.out.println("Height of Button: "+rect.getHeight());
 		
+		
 		//close the browser and stop the server
 		driver.quit();
 		

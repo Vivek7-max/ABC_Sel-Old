@@ -2,20 +2,23 @@ package test;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class P1 {
+public class P5 {
+
 	public static void main(String[] args) throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
 		WebDriver driver = new ChromeDriver(); 
 		driver.manage().window().maximize();
-		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
-		Thread.sleep(5000);
-		driver.findElement(By.xpath("//button[@type='submit']")).submit();
-		Thread.sleep(5000);
-		System.out.println("Done");	
+
+		driver.get("https://www.udemy.com/");
+		
+		driver.findElement(By.name("q")).sendKeys("Java");
+		
+		Thread.sleep(8000);
+		
 		driver.quit();
+
 	}
 
 }
