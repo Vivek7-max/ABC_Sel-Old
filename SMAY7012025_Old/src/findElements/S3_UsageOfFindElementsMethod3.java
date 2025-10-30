@@ -7,7 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class S3_UsageOfFindElementMethod3 {
+public class S3_UsageOfFindElementsMethod3 {
 
 	public static void main(String[] args) throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");

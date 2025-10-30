@@ -18,5 +18,6 @@
 	<classpathentry kind="lib" path="jar/selenium-3.141.59-nodeps.jar"/>
 	<classpathentry kind="lib" path="jar/selenium-3.141.59-nodeps-sources.jar"/>
 	<classpathentry kind="lib" path="jar/snakeyaml-1.19.jar"/>
+	<classpathentry kind="lib" path="jar/commons-io-2.20.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

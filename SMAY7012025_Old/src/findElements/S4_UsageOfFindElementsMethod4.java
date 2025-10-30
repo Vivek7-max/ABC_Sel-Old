@@ -9,7 +9,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class S4_UsageOfFindElementMethod4 {
+public class S4_UsageOfFindElementsMethod4 {
 
 	public static void main(String[] args) throws InterruptedException {
 		//Open Browser, Maximize it and Navigate to URL
