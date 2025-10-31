@@ -11,7 +11,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class S7_UsageOfTakesSceenshotAsMethodForWebElement2 {
-
+	//Program to capture the screenshot of the web element with time stamp
 	public static void main(String[] args) throws IOException {
 		//Open Browser, Maximize it and Navigate to URL
 		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");

@@ -15,7 +15,6 @@ public class S2_UsageOfTakesSceenshotAsMethod2 {
 		driver.manage().window().maximize();
 		driver.get("https://www.selenium.dev/");
 		
-		
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		
 		File temp = ts.getScreenshotAs(OutputType.FILE);
@@ -26,6 +25,7 @@ public class S2_UsageOfTakesSceenshotAsMethod2 {
 		
 		Thread.sleep(10000);
 		
+		//close the browser and stop the server
 		driver.quit();
 		
 
