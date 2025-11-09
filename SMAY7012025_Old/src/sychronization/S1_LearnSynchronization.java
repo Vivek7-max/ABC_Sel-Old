@@ -4,7 +4,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver; 
-
+//implicit wait
 public class S1_LearnSynchronization {
 	public static void main(String[] args) {
 		//Open Browser, Maximize it and Navigate to URL
