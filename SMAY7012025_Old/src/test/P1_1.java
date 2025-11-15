@@ -1,8 +1,7 @@
 package test;
 
-import java.util.List;
+import java.util.List; 
 import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -15,11 +14,18 @@ public class P1_1 {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		
-		driver.manage().timeouts().pageLoadTimeout(2, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
-		driver.get("https://trello.com/");
+		driver.get("https://www.facebook.com/login/");
 
-		driver.findElement(By.xpath("//a[text()='Log in' and @data-uuid]")).click();
+		WebElement parentEle = driver.findElement(By.id("login_form"));
+		
+		parentEle.findElement(By.name("email")).sendKeys("test@gmail.com");		
+		parentEle.findElement(By.name("pass")).sendKeys("Sheela@123");
+		
+		
+		parentEle.findElement(By.name("login")).click();
+	
 	}
 
 }
